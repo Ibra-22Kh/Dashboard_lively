@@ -2,7 +2,7 @@ import React from 'react';
 import { ChartComponent, SeriesCollectionDirective, SeriesDirective, Inject, DateTime, Legend, SplineAreaSeries} from '@syncfusion/ej2-react-charts'
 
 import { areaCustomSeries, areaPrimaryXAxis, areaPrimaryYAxis } from '../../data/dummy';
-import { Header } from '../../components';
+import { ChartsHeader } from '../../components';
 import { useStateContext } from '../../context/ContextProvider';
 
 
@@ -11,7 +11,7 @@ const Area = () => {
   return (
     <div className="m-4 md:m-10 mt-24 p-10 bg-white
     dark:bg-secondary-dark-bg rounded-3xl">
-      <Header category="Area" title="Inflation 
+      <ChartsHeader category="Area" title="Inflation 
       Rate in Percentage"/>
       <ChartComponent
       id="line-chart"
@@ -35,4 +35,4 @@ const Area = () => {
     )
 }
 
-export default Area
+export default Area;
