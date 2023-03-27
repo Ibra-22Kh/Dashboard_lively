@@ -86,7 +86,7 @@ const Ecommerce = () => {
           ))}
         </div>
       </div>
-      
+
       <div
         className="flex gap-10 flex-wrap
       justify-center "
@@ -105,15 +105,19 @@ const Ecommerce = () => {
               Revenue Updates
             </p>
             <div className="flex items-center gap-4">
-              <p className="flex items-center gap-2
-              text-gray-600 hover:drop-shadow-xl">
+              <p
+                className="flex items-center gap-2
+              text-gray-600 hover:drop-shadow-xl"
+              >
                 <span>
                   <GoPrimitiveDot />
                 </span>
                 <span>Expense</span>
               </p>
-              <p className="flex items-center gap-2 
-              text-green-400 hover:drop-shadow-xl">
+              <p
+                className="flex items-center gap-2 
+              text-green-400 hover:drop-shadow-xl"
+              >
                 <span>
                   <GoPrimitiveDot />
                 </span>
@@ -124,50 +128,60 @@ const Ecommerce = () => {
           <div className="mt-10 flex gap-10 flex-wrap justify-center">
             <div className="border-r-1- border-color m-4 pr-10">
               <div>
-                <p >
-                  <span className="text-3xl 
-                  font-semibold">$98,264</span>
-                  <span className="p-1.5 
+                <p>
+                  <span
+                    className="text-3xl 
+                  font-semibold"
+                  >
+                    $98,264
+                  </span>
+                  <span
+                    className="p-1.5 
                   hover:drop-shadow-xl
                   cursor-pointer 
                   rounded-full bg-green-400 ml-3
-                  text-xs">35%</span>
+                  text-xs"
+                  >
+                    35%
+                  </span>
                 </p>
                 <p className="text-gray-500 mt-1">Budget</p>
               </div>
 
               <div className="mt-8">
                 <p>
-                  <span className="text-3xl 
-                  font-semibold">$38,264</span>
+                  <span
+                    className="text-3xl 
+                  font-semibold"
+                  >
+                    $38,264
+                  </span>
                 </p>
                 <p className="text-gray-500 mt-1">Expense</p>
               </div>
-            </div>
               <div className="mt-5">
                 <SparkLine
-                currentColor="blue"
-                id="line-sparkline"
-                type="Line"
-                height="80px"
-                weight="250px"
-                data={SparklineAreaData}
-                color="blue"
+                  currentColor="blue"
+                  id="line-sparkline"
+                  type="Line"
+                  height="80px"
+                  weight="250px"
+                  data={SparklineAreaData}
+                  color="blue"
                 />
+              </div>
+              <div className="mt-10">
+                <Button
+                  color="white"
+                  bgColor="blue"
+                  text="Download Report"
+                  borderRadius="10px"
+                />
+              </div>
             </div>
-            <div className="mt-10">
-              <Button
-              color="white"
-              bgColor="blue"
-              text="Download Report"
-              borderRadius="10px"
-              />
+            <div>
+              <Stacked width="320px" height="360" />
             </div>
-          </div>
-          <div>
-            <Stacked width="320px"
-            height="360"
-            />
           </div>
         </div>
       </div>
